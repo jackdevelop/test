@@ -1,7 +1,7 @@
 CCFileUtils:sharedFileUtils():addSearchPath("res/")
 --CCFileUtils:sharedFileUtils():addSearchPath("res/game/loading/")
 CCLuaLoadChunksFromZIP("res/script/framework_precompiled.zip")
---CCLuaLoadChunksFromZIP("res/script/game.zip")
+CCLuaLoadChunksFromZIP("res/script/game.zip")
 
 require("config")
 require("framework.init")
