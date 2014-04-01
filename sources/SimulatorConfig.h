@@ -154,7 +154,8 @@ public:
 
     // get precompiled framework path
     const string getPrecompiledFrameworkPath(void);
-
+	const string getPrecompiledGamePath(void);
+	
     // helper
     static void makeNormalizePath(string *path, const char *directorySeparator = NULL);
 

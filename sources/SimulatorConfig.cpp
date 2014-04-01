@@ -631,6 +631,18 @@ const string SimulatorConfig::getPrecompiledFrameworkPath(void)
     return path;
 }
 
+// load framework
+const string SimulatorConfig::getPrecompiledGamePath(void)
+{
+    string path = m_quickCocos2dxRootPath;
+    path.append("lib");
+    path.append(DIRECTORY_SEPARATOR);
+    path.append("framework_precompiled");
+    path.append(DIRECTORY_SEPARATOR);
+    path.append("game.zip");
+    return path;
+}
+
 
 // helper
 

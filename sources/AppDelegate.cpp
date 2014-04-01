@@ -48,7 +48,17 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     // load framework
-    pStack->loadChunksFromZIP("res/framework_precompiled.zip");
+   // pStack->loadChunksFromZIP("res/framework_precompiled.zip");
+
+	// 如果设置了 -e 和 -ek 要加上下面这句
+    // pStack->setXXTEAKeyAndSign("aaa", 3);
+    // 如果设置了 -e 和 -ek -es 则要加上下面这句
+    pStack->setXXTEAKeyAndSign("aaa", 3, "XT", 2);
+    // load framework
+    pStack->loadChunksFromZIP("res/script/framework_precompiled.zip");
+    pStack->loadChunksFromZIP("res/script/game.zip");
+    pStack->executeString("require 'main'");
+
 
     // set script path
     string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("scripts/main.lua");
@@ -57,7 +67,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     if (m_projectConfig.isLoadPrecompiledFramework())
     {
         const string precompiledFrameworkPath = SimulatorConfig::sharedDefaults()->getPrecompiledFrameworkPath();
+		const string precompiledGamePath = SimulatorConfig::sharedDefaults()->getPrecompiledGamePath();
+		pStack->setXXTEAKeyAndSign("aaa", 3, "XT", 2);//加密操作
         pStack->loadChunksFromZIP(precompiledFrameworkPath.c_str());
+		pStack->loadChunksFromZIP(precompiledGamePath.c_str());
     }
 
     // set script path
