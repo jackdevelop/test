@@ -59,9 +59,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     pStack->loadChunksFromZIP("res/script/game.zip");
     pStack->executeString("require 'main'");
 
-
+	
     // set script path
-    string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("scripts/main.lua");
+    //string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("scripts/main.lua");
+	string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("main.lua");
 #else
     // load framework
     if (m_projectConfig.isLoadPrecompiledFramework())
@@ -71,7 +72,11 @@ bool AppDelegate::applicationDidFinishLaunching()
 		pStack->setXXTEAKeyAndSign("aaa", 3, "XT", 2);//¼ÓÃÜ²Ù×÷
         pStack->loadChunksFromZIP(precompiledFrameworkPath.c_str());
 		pStack->loadChunksFromZIP(precompiledGamePath.c_str());
+
+		pStack->executeString("require 'main'");
     }
+
+	
 
     // set script path
     string path = CCFileUtils::sharedFileUtils()->fullPathForFilename(m_projectConfig.getScriptFileRealPath().c_str());
@@ -98,12 +103,14 @@ bool AppDelegate::applicationDidFinishLaunching()
     string env = "__LUA_STARTUP_FILE__=\"";
     env.append(path);
     env.append("\"");
-    pEngine->executeString(env.c_str());
+    //pEngine->executeString(env.c_str());
 
+	CCLOG("==",env.c_str());
     CCLOG("------------------------------------------------");
     CCLOG("LOAD LUA FILE: %s", path.c_str());
     CCLOG("------------------------------------------------");
-    pEngine->executeScriptFile(path.c_str());
+    //pEngine->executeScriptFile(path.c_str());
+	//pEngine->executeScriptFile("main.lua");
 
     return true;
 }
