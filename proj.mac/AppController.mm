@@ -117,7 +117,7 @@ using namespace cocos2d::extra;
     if (dup2(outfd, fileno(stderr)) != fileno(stderr) || dup2(outfd, fileno(stdout)) != fileno(stdout))
     {
         perror("Unable to redirect output");
-        [self showAlert:@"Unable to redirect output to console!" withTitle:@"towerdefense-player error"];
+        [self showAlert:@"Unable to redirect output to console!" withTitle:@"test-player error"];
     }
     else
     {
@@ -153,7 +153,7 @@ using namespace cocos2d::extra;
 
     // set window parameters
     [window setContentView:glView];
-    [window setTitle:@"towerdefense-player"];
+    [window setTitle:@"test-player"];
     [window center];
 
     if (projectConfig.getProjectDir().length())
@@ -178,7 +178,7 @@ using namespace cocos2d::extra;
     if (!path || [path length] == 0)
     {
         [self showPreferences:YES];
-        [self showAlertWithoutSheet:@"Please set quick-cocos2d-x root path." withTitle:@"towerdefense-player error"];
+        [self showAlertWithoutSheet:@"Please set quick-cocos2d-x root path." withTitle:@"test-player error"];
     }
 
     const string projectDir = projectConfig.getProjectDir();
@@ -341,7 +341,7 @@ using namespace cocos2d::extra;
         [menuRecents insertItem:item atIndex:0];
     }
 
-    [window setTitle:[NSString stringWithFormat:@"towerdefense-player (%0.0f%%)", projectConfig.getFrameScale() * 100]];
+    [window setTitle:[NSString stringWithFormat:@"test-player (%0.0f%%)", projectConfig.getFrameScale() * 100]];
 }
 
 - (void) showModelSheet

@@ -19,43 +19,43 @@ lua_loadChunksFromZIP() - loaded chunks count: 54
 lua_loadChunksFromZIP() - load zip file: E:\cocos2d-x+lua\lua\item\engin\git\devel\quick-cocos2d-x\lib\framework_precompiled\game.zip*
 lua_loadChunksFromZIP() - loaded chunks count: 54
 LuaJIT status is ON
-[0.2741] [INFO] 
-[0.2745] [INFO] # DEBUG                        = 2
-[0.2753] [INFO] #
-[0.2763] [INFO] # device.platform              = windows
-[0.2767] [INFO] # device.model                 = unknown
-[0.2774] [INFO] # device.language              = cn
-[0.2781] [INFO] # device.writablePath          = F:\workspace\lua\test\proj.win32\Debug\
-[0.2792] [INFO] # device.cachePath             = F:\workspace\lua\test\proj.win32\Debug\
-[0.2809] [INFO] # device.directorySeparator    = \
-[0.2819] [INFO] # device.pathSeparator         = ;
-[0.2825] [INFO] #
-[0.2851] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.2857] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
-[0.2864] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
-[0.2870] [INFO] # display.widthInPixels        = 960.00
-[0.2877] [INFO] # display.heightInPixels       = 640.00
-[0.2883] [INFO] # display.contentScaleFactor   = 1.00
-[0.2890] [INFO] # display.width                = 960.00
-[0.2895] [INFO] # display.height               = 640.00
-[0.2902] [INFO] # display.cx                   = 480.00
-[0.2908] [INFO] # display.cy                   = 320.00
-[0.2916] [INFO] # display.left                 = 0.00
-[0.2922] [INFO] # display.right                = 960.00
-[0.2929] [INFO] # display.top                  = 640.00
-[0.2935] [INFO] # display.bottom               = 0.00
-[0.2941] [INFO] # display.c_left               = -480.00
-[0.2947] [INFO] # display.c_right              = 480.00
-[0.2953] [INFO] # display.c_top                = 320.00
-[0.2958] [INFO] # display.c_bottom             = -320.00
-[0.2973] [INFO] #
+[0.2375] [INFO] 
+[0.2381] [INFO] # DEBUG                        = 2
+[0.2389] [INFO] #
+[0.2399] [INFO] # device.platform              = windows
+[0.2404] [INFO] # device.model                 = unknown
+[0.2412] [INFO] # device.language              = cn
+[0.2420] [INFO] # device.writablePath          = F:\workspace\lua\test\proj.win32\Debug\
+[0.2430] [INFO] # device.cachePath             = F:\workspace\lua\test\proj.win32\Debug\
+[0.2439] [INFO] # device.directorySeparator    = \
+[0.2444] [INFO] # device.pathSeparator         = ;
+[0.2449] [INFO] #
+[0.2476] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.2483] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[0.2489] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[0.2495] [INFO] # display.widthInPixels        = 960.00
+[0.2501] [INFO] # display.heightInPixels       = 640.00
+[0.2507] [INFO] # display.contentScaleFactor   = 1.00
+[0.2513] [INFO] # display.width                = 960.00
+[0.2519] [INFO] # display.height               = 640.00
+[0.2525] [INFO] # display.cx                   = 480.00
+[0.2531] [INFO] # display.cy                   = 320.00
+[0.2537] [INFO] # display.left                 = 0.00
+[0.2542] [INFO] # display.right                = 960.00
+[0.2549] [INFO] # display.top                  = 640.00
+[0.2557] [INFO] # display.bottom               = 0.00
+[0.2564] [INFO] # display.c_left               = -480.00
+[0.2570] [INFO] # display.c_right              = 480.00
+[0.2577] [INFO] # display.c_top                = 320.00
+[0.2583] [INFO] # display.c_bottom             = -320.00
+[0.2589] [INFO] #
 Get data from file(SheetMapBattle.png) failed!
 cocos2d: CCSpriteFrameCache: couldn't load texture file. File not found SheetMapBattle.png
 Get data from file(SheetEditor.png) failed!
 cocos2d: CCSpriteFrameCache: couldn't load texture file. File not found SheetEditor.png
 Get data from file(MapA0001Bg.png) failed!
-[0.3072] [ERR] display.newSprite() - create sprite failure, filename MapA0001Bg.png
-[0.3081] 
+[0.2698] [ERR] display.newSprite() - create sprite failure, filename MapA0001Bg.png
+[0.2711] 
 stack traceback:
 	[string "framework.display"]: in function 'newSprite'
 	[string "app.map.Map"]: in function 'createView'
