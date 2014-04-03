@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39399A7818ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39399A7418ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp */; };
+		39399A7918ED7CCB00484BEC /* MapRuntimeC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39399A7618ED7CCB00484BEC /* MapRuntimeC.cpp */; };
 		F40EE898163F83E000090121 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44C957915F49004004D4151 /* AppKit.framework */; };
 		F416EF01177E8F1600653960 /* PlayerPreferencesDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = F416EF00177E8F1600653960 /* PlayerPreferencesDialog.xib */; };
 		F416EF04177E914600653960 /* PlayerPreferencesDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = F416EF03177E914600653960 /* PlayerPreferencesDialogController.m */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39399A7418ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapRuntimeC_luabinding.cpp; sourceTree = "<group>"; };
+		39399A7518ED7CCB00484BEC /* MapRuntimeC_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC_luabinding.h; sourceTree = "<group>"; };
+		39399A7618ED7CCB00484BEC /* MapRuntimeC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapRuntimeC.cpp; sourceTree = "<group>"; };
+		39399A7718ED7CCB00484BEC /* MapRuntimeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC.h; sourceTree = "<group>"; };
 		F416EF00177E8F1600653960 /* PlayerPreferencesDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPreferencesDialog.xib; sourceTree = "<group>"; };
 		F416EF02177E914600653960 /* PlayerPreferencesDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerPreferencesDialogController.h; sourceTree = "<group>"; };
 		F416EF03177E914600653960 /* PlayerPreferencesDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerPreferencesDialogController.m; sourceTree = "<group>"; };
@@ -192,6 +198,10 @@
 		F4B08159175C8A1E0029F472 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				39399A7418ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp */,
+				39399A7518ED7CCB00484BEC /* MapRuntimeC_luabinding.h */,
+				39399A7618ED7CCB00484BEC /* MapRuntimeC.cpp */,
+				39399A7718ED7CCB00484BEC /* MapRuntimeC.h */,
 				F4B0815A175C8A1E0029F472 /* AppDelegate.cpp */,
 				F4B0815B175C8A1E0029F472 /* AppDelegate.h */,
 				F4B0815C175C8A1E0029F472 /* SimulatorConfig.cpp */,
@@ -230,7 +240,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = qeeplay.com;
 			};
-			buildConfigurationList = F44C956C15F49004004D4151 /* Build configuration list for PBXProject "test-player" */;
+			buildConfigurationList = F44C956C15F49004004D4151 /* Build configuration list for PBXProject "test" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -288,9 +298,11 @@
 				F4B0815E175C8A1E0029F472 /* AppDelegate.cpp in Sources */,
 				F4B0815F175C8A1E0029F472 /* SimulatorConfig.cpp in Sources */,
 				F432397B176433E5008C4624 /* ProjectConfigDialogController.mm in Sources */,
+				39399A7918ED7CCB00484BEC /* MapRuntimeC.cpp in Sources */,
 				F49DC887177C0C5E00D20226 /* NSApplication+SheetAdditions.m in Sources */,
 				F416EF04177E914600653960 /* PlayerPreferencesDialogController.m in Sources */,
 				F4D73A6017A6490A00FA7398 /* ConsoleWindowController.m in Sources */,
+				39399A7818ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F44C956C15F49004004D4151 /* Build configuration list for PBXProject "test-player" */ = {
+		F44C956C15F49004004D4151 /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44C958E15F49004004D4151 /* Debug */,
