@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39E2842718EE94F800809F0E /* MapRuntimeC_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E2842318EE94F800809F0E /* MapRuntimeC_luabinding.cpp */; };
+		39E2842818EE94F800809F0E /* MapRuntimeC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E2842518EE94F800809F0E /* MapRuntimeC.cpp */; };
 		F4323CF716D3298E0072B773 /* libquickcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F590816D21F8C000651BE /* libquickcocos2dx.a */; };
 		F4482F2116A0555000FDDDAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4482F1A16A0555000FDDDAD /* Default-568h@2x.png */; };
 		F4482F2216A0555000FDDDAD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F4482F1B16A0555000FDDDAD /* Default.png */; };
@@ -27,7 +29,6 @@
 		F456F0FD15EE0CF600FCF3E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F456F0FC15EE0CF600FCF3E2 /* SystemConfiguration.framework */; };
 		F456F10515EE0D2D00FCF3E2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F456F10415EE0D2D00FCF3E2 /* MobileCoreServices.framework */; };
 		F4730C1E16C1509700280298 /* res in Resources */ = {isa = PBXBuildFile; fileRef = F4730C1C16C1509700280298 /* res */; };
-		F4730C1F16C1509700280298 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = F4730C1D16C1509700280298 /* scripts */; };
 		F4949C791699553B00DB561E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4949C781699553B00DB561E /* AddressBook.framework */; };
 		F4949C7B1699554600DB561E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4949C7A1699554600DB561E /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F4D26BCC16C7D0D2004442B6 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4D26BC816C7D0D2004442B6 /* AppController.mm */; };
@@ -49,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39E2842318EE94F800809F0E /* MapRuntimeC_luabinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapRuntimeC_luabinding.cpp; sourceTree = "<group>"; };
+		39E2842418EE94F800809F0E /* MapRuntimeC_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC_luabinding.h; sourceTree = "<group>"; };
+		39E2842518EE94F800809F0E /* MapRuntimeC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapRuntimeC.cpp; sourceTree = "<group>"; };
+		39E2842618EE94F800809F0E /* MapRuntimeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC.h; sourceTree = "<group>"; };
 		F4482F1A16A0555000FDDDAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F4482F1B16A0555000FDDDAD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F4482F1C16A0555000FDDDAD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -73,7 +78,6 @@
 		F456F10415EE0D2D00FCF3E2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F456F10615EE0D3500FCF3E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4730C1C16C1509700280298 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
-		F4730C1D16C1509700280298 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scripts; path = ../../../scripts; sourceTree = "<group>"; };
 		F4949C781699553B00DB561E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		F4949C7A1699554600DB561E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F4D26BC716C7D0D2004442B6 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -185,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				F4730C1C16C1509700280298 /* res */,
-				F4730C1D16C1509700280298 /* scripts */,
 				F48ABAD516A057D000A60C5B /* ios */,
 			);
 			name = Resources;
@@ -215,6 +218,10 @@
 		F4E50FE216CF7B6500AA7E90 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				39E2842318EE94F800809F0E /* MapRuntimeC_luabinding.cpp */,
+				39E2842418EE94F800809F0E /* MapRuntimeC_luabinding.h */,
+				39E2842518EE94F800809F0E /* MapRuntimeC.cpp */,
+				39E2842618EE94F800809F0E /* MapRuntimeC.h */,
 				F4E50FE316CF7B6500AA7E90 /* AppDelegate.cpp */,
 				F4E50FE416CF7B6500AA7E90 /* AppDelegate.h */,
 				F4F34ED0183CD04B0077580F /* SimulatorConfig.cpp */,
@@ -298,7 +305,6 @@
 				F4482F2516A0555000FDDDAD /* Icon.png in Resources */,
 				F4482F2616A0555000FDDDAD /* Icon@2x.png in Resources */,
 				F4730C1E16C1509700280298 /* res in Resources */,
-				F4730C1F16C1509700280298 /* scripts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +317,11 @@
 			files = (
 				F4D26BCC16C7D0D2004442B6 /* AppController.mm in Sources */,
 				F4D26BCD16C7D0D2004442B6 /* main.m in Sources */,
+				39E2842718EE94F800809F0E /* MapRuntimeC_luabinding.cpp in Sources */,
 				F4F34ED2183CD04B0077580F /* SimulatorConfig.cpp in Sources */,
 				F4D26BCE16C7D0D2004442B6 /* RootViewController.mm in Sources */,
 				F4E50FE516CF7B6500AA7E90 /* AppDelegate.cpp in Sources */,
+				39E2842818EE94F800809F0E /* MapRuntimeC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

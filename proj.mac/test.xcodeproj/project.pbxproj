@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39399A7818ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39399A7418ED7CCB00484BEC /* MapRuntimeC_luabinding.cpp */; };
 		39399A7918ED7CCB00484BEC /* MapRuntimeC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39399A7618ED7CCB00484BEC /* MapRuntimeC.cpp */; };
+		39E2842018EE917900809F0E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 39E2841F18EE917900809F0E /* res */; };
 		F40EE898163F83E000090121 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44C957915F49004004D4151 /* AppKit.framework */; };
 		F416EF01177E8F1600653960 /* PlayerPreferencesDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = F416EF00177E8F1600653960 /* PlayerPreferencesDialog.xib */; };
 		F416EF04177E914600653960 /* PlayerPreferencesDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = F416EF03177E914600653960 /* PlayerPreferencesDialogController.m */; };
@@ -51,6 +52,7 @@
 		39399A7518ED7CCB00484BEC /* MapRuntimeC_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC_luabinding.h; sourceTree = "<group>"; };
 		39399A7618ED7CCB00484BEC /* MapRuntimeC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapRuntimeC.cpp; sourceTree = "<group>"; };
 		39399A7718ED7CCB00484BEC /* MapRuntimeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRuntimeC.h; sourceTree = "<group>"; };
+		39E2841F18EE917900809F0E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../res; sourceTree = "<group>"; };
 		F416EF00177E8F1600653960 /* PlayerPreferencesDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPreferencesDialog.xib; sourceTree = "<group>"; };
 		F416EF02177E914600653960 /* PlayerPreferencesDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerPreferencesDialogController.h; sourceTree = "<group>"; };
 		F416EF03177E914600653960 /* PlayerPreferencesDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerPreferencesDialogController.m; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		F44C957C15F49004004D4151 /* test-player */ = {
 			isa = PBXGroup;
 			children = (
+				39E2841F18EE917900809F0E /* res */,
 				F4B08159175C8A1E0029F472 /* sources */,
 				F4B08158175C8A100029F472 /* mac */,
 			);
@@ -281,6 +284,7 @@
 				F4B0814D175C89050029F472 /* Icon.icns in Resources */,
 				F4703CBE177955E200A8A9E9 /* MainMenu.xib in Resources */,
 				F4703CBF177955E200A8A9E9 /* ProjectConfigDialog.xib in Resources */,
+				39E2842018EE917900809F0E /* res in Resources */,
 				F416EF01177E8F1600653960 /* PlayerPreferencesDialog.xib in Resources */,
 				F4D73A5F17A6490A00FA7398 /* ConsoleWindow.xib in Resources */,
 			);
